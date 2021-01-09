@@ -41,7 +41,6 @@ https://malloryfaria.github.io/work-day-scheduler/
 - JavaScript
 - CSS
 - JQuery
-- JQueryUI
 - BootStrap
 - Moment.js
 
