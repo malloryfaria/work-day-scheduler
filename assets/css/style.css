@@ -30,11 +30,6 @@ p {
   white-space: pre-wrap;
 }
 
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -42,9 +37,10 @@ p {
 }
 
 .hour {
-  background-color: #ffffff;
+  text-align: center;
+  background-color: rgb(255,255,255,0.5);
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-radius: 15px;
 }
 
 .past {
@@ -74,4 +70,9 @@ p {
   background-color: white;
   color: #06AED5;
   transition : all .3s ease-in-out;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
 }
