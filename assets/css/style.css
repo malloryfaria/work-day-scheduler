@@ -4,12 +4,12 @@ body {
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
   border-left: 1px solid black;
+  border-right: 1px solid black;
   padding: 10px;
 }
 
@@ -19,6 +19,11 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+p {
+  text-align: center;
+  background-color: transparent;
 }
 
 .description{
@@ -57,15 +62,16 @@ textarea{
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+.saveBtn, #refresh, .btn-delete {
+  border-radius: 5px;
   background-color: #06AED5;
   color: white;
+  font-size: x-large;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.saveBtn:hover, #refresh:hover, .btn-delete:hover {
+  font-size: xx-large;
+  background-color: white;
+  color: #06AED5;
+  transition : all .3s ease-in-out;
 }
