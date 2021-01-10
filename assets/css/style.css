@@ -21,12 +21,25 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+h1 {
+  font-family: 'Amatic SC', 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
 p {
   text-align: center;
   background-color: transparent;
 }
 
-.description{
+#currentDay {
+  color: #fd85a9;
+  font-weight: bold;
+  margin: 20px;
+  font-size: x-large;
+} 
+
+#agenda-text {
   white-space: pre-wrap;
 }
 
@@ -38,6 +51,8 @@ p {
 
 .hour {
   text-align: center;
+  font-size: larger;
+  font-weight: bold;
   background-color: rgb(255,255,255,0.5);
   color: #000000;
   border-radius: 15px;
@@ -49,7 +64,7 @@ p {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #e74c60;
   color: white;
 }
 
@@ -60,7 +75,7 @@ p {
 
 .saveBtn, #refresh, .btn-delete {
   border-radius: 5px;
-  background-color: #06AED5;
+  background-color: #fd85a9;
   color: white;
   font-size: x-large;
 }
@@ -68,7 +83,7 @@ p {
 .saveBtn:hover, #refresh:hover, .btn-delete:hover {
   font-size: xx-large;
   background-color: white;
-  color: #06AED5;
+  color: #fd85a9;
   transition : all .3s ease-in-out;
 }
 
