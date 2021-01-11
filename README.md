@@ -48,7 +48,35 @@ https://malloryfaria.github.io/work-day-scheduler/
 ## Code Example
 
 ```
-// TODO add code here
+// Uses Moment to get current date and current hour
+var currentDate = moment().format("dddd MMM Do YYYY, h:mm a");
+var currentHour = moment().format("H");
+
+// Declare variables
+var timeRow = $(".time-row");
+var container = $(".container");
+
+// Create an array to hold the tasks for saving to localStorage
+var tasks = [];
+
+// Function to load the page initially
+
+function loadTasks() {
+
+    timeRow.each(function(){
+        var thisRow = $(this);
+        var thisRowHr = parseInt(thisRow.attr("data-hour"));
+    
+        var tasksObj = {
+          hour: thisRowHr,
+          text: "",
+        }
+        tasks.push(tasksObj);
+      });
+      // Loop all rows and save to the local storage
+      localStorage.setItem("tasks", JSON.stringify(tasks)); 
+
+};
 
 ```
 
